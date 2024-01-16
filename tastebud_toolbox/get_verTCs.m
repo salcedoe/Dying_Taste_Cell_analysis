@@ -1,17 +1,22 @@
 function [VL, fTL] = get_verTCs(SL, fTL, load_last)
-%GET_VERTCS returns table of indicated traces with vertices and colors. 
+%GET_VERTCS imports data from Reconstruct series files and returns table of indicated traces with vertices and colors. 
 %   note: vertices values are in pixels (image dimensions * image
 %   magnification). fTL field correction should be a ratio of xy to z 
-%   (eg 8n/80 = 0.1). This needs to be manually set
+%   (eg 8n/80 = 0.1). This may need to be manually set
 
 % INPUTS
 % - SL: Series List
 % - fTL: Filtered trace list. Anything found in the fTL.Properties.Description
 %                               are added to the file name
-% - load_last: load the last saved vertices list file
+% - load_last: load the last saved vertices list file (as opposed to
+%               importing the data). Much faster since you are just loading
+%               a mat file. Only works if you have previously imported
 % 
 % OUTPUTS
 % - VL: Vertices List
+% ---
+% AUTHOR: Ernesto Salcedo, PhD
+% SITE: University of Colorado School of Medicine
 
 VLfile = fullfile(SL.Properties.UserData.paths.series, ['VerticesList'  fTL.Properties.Description '.mat']);
 
@@ -32,7 +37,6 @@ vlidx = 1;
 
 % rstr = sprintf('<Contour name="%s".+?/>',trace_name);
 
-% series_range = fTL.Properties.UserData.series_range;
 series_range = single(unique(cell2mat(fTL.Indices)))';
 
 % Preallocate
@@ -95,11 +99,6 @@ for si = series_range
     vl.contour_id = contour_id(sort(uci));
     vl = movevars(vl,"contour_id",After="Object");
   
-    % prior to 5-08-23
-    % vl = [array2table(cat(1,Object_names{:}),'VariableNames', {'Object'}) ...
-    %       array2table(cell2mat(contour_id),'VariableNames', {'contour_id'}) ...
-    %       array2table(cell2mat(ptsc),'VariableNames',{'x','y'})];
-     
     vl.z = repmat(si,height(vl),1);
     
     VL(vlidx:vlidx+height(vl)-1,{'Object','contour_id','x', 'y', 'z'}) = vl;
@@ -134,9 +133,6 @@ VL.y = VL.y / VL.Properties.UserData.img_mag;
 VL.Properties.UserData.bounding_box = [floor(min(VL.x)) floor(min(VL.y)) min(VL.z)...
     ceil(range(VL.x)) ceil(range(VL.y)) range(VL.z)];
 
-% invert y to match image coordinates
-% VL.y = VL.Properties.UserData.height - VL.y;
-
 % Correct Z position
 VL.z = VL.z / VL.Properties.UserData.zCorrection;
 
@@ -150,14 +146,6 @@ fTL.rgb_name = string(colornames('MATLAB', double(fTL.RGBfill == max(fTL.RGBfill
 VL.Properties.UserData.fTL = fTL;
 VL.Properties.UserData.file = VLfile;
 
-% if exist(VLfile, 'file')
-%     [file,path] = uiputfile({'*.txt','Text file (*.txt)';'*.*','All files (*.*)'},'Save File Name',filename);
-% end  
-
-% % invert Y
-% max_y = VL.Properties.UserData.image_size(1) * VL.Properties.UserData.img_mag;
-% VL.y = max_y - VL.y;
-
 fprintf('\n **IMPORT COMPLETE** \n Saved as: %s \n Image Magnification: %2.4f \n Section Thickness: %2.4f\n',...
     VLfile,...
     VL.Properties.UserData.img_mag,...
@@ -167,7 +155,8 @@ save(VLfile, 'VL')
 end
 
 % --------------------
-% SUB-functions -------
+% SUB-functions 
+% --------------------
 
 function pts = get_points(contour_elements)
 % get points

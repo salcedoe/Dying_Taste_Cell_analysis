@@ -1,5 +1,5 @@
 function [SL,TL] = get_series_contents(series_path, load_file)
-%GET_SERIES_CONTENTS scans indicated folder for the appropriate files and
+%GET_SERIES_CONTENTS scans indicated Reconstruct Project folder for the required series files and
 %compiles necessary data
 % INPUTS:
 % - series_path (ch array): path the folder 
@@ -7,8 +7,11 @@ function [SL,TL] = get_series_contents(series_path, load_file)
 %
 % OUTPUTS:
 % - SL (table): series list, contains file names and corresponding section indices
-%               - SL USERDATA: TN - a table containing all the unique trace names on each series file
-% - TL (table): trace list, a table containing trace info (bbjc
+%               - SL USERDATA: TN - a table containing all the unique trace names in each series file
+% - TL (table): trace list, a table containing trace info
+% ---
+% AUTHOR: Ernesto Salcedo, PhD
+% SITE: University of Colorado School of Medicine
 
 %% GET paths
 
