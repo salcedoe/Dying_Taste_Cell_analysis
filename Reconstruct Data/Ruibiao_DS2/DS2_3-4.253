@@ -1,0 +1,543 @@
+<?xml version="1.0"?>
+<!DOCTYPE Section SYSTEM "section.dtd">
+
+<Section index="253" thickness="0.08" alignLocked="true">
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Image mag="0.00749" contrast="1" brightness="0" red="true" green="true" blue="true"
+ src="Alg_stitch3-4_253.tif" />
+<Contour name="domain1" hidden="false" closed="true" simplified="false" border="1 0 1" fill="1 0 1" mode="11"
+ points="0 0,
+	15652 0,
+	15652 8578,
+	0 8578,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Contour name="TB3_NF01-PG_RSL" hidden="false" closed="true" simplified="true" border="1 1 0" fill="1 1 0" mode="-9"
+ points="19.72 15.24,
+	19.83 14.92,
+	19.89 14.76,
+	20.05 14.63,
+	20.09 14.55,
+	20.17 14.48,
+	20.33 14.39,
+	20.49 14.32,
+	20.56 14.27,
+	20.6 14.26,
+	20.66 14.34,
+	20.68 14.66,
+	20.75 14.74,
+	20.77 14.78,
+	20.79 14.8,
+	20.83 14.96,
+	20.85 15.04,
+	20.85 15.2,
+	20.87 15.36,
+	20.89 15.44,
+	20.89 15.52,
+	20.88 15.56,
+	20.91 15.64,
+	20.92 15.8,
+	20.92 15.84,
+	20.85 16,
+	20.81 16.08,
+	20.74 16.16,
+	20.7 16.19,
+	20.54 16.24,
+	20.46 16.25,
+	20.38 16.23,
+	20.34 16.2,
+	20.32 16.19,
+	20.32 16.15,
+	20.24 16.11,
+	20.22 16.09,
+	20.14 16.06,
+	20.06 16.05,
+	19.98 16,
+	19.85 15.85,
+	19.78 15.69,
+	19.75 15.61,
+	19.73 15.57,
+	19.72 15.25,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Contour name="TB3_NF01-PG_RSL" hidden="false" closed="true" simplified="true" border="1 1 0" fill="1 1 0" mode="-9"
+ points="19.72 15.24,
+	19.83 14.92,
+	19.89 14.76,
+	20.05 14.63,
+	20.09 14.55,
+	20.17 14.48,
+	20.33 14.39,
+	20.49 14.32,
+	20.56 14.27,
+	20.6 14.26,
+	20.66 14.34,
+	20.68 14.66,
+	20.75 14.74,
+	20.77 14.78,
+	20.79 14.8,
+	20.83 14.96,
+	20.85 15.04,
+	20.85 15.2,
+	20.87 15.36,
+	20.89 15.44,
+	20.89 15.52,
+	20.88 15.56,
+	20.91 15.64,
+	20.92 15.8,
+	20.92 15.84,
+	20.85 16,
+	20.81 16.08,
+	20.74 16.16,
+	20.7 16.19,
+	20.54 16.24,
+	20.46 16.25,
+	20.38 16.23,
+	20.34 16.2,
+	20.32 16.19,
+	20.32 16.15,
+	20.24 16.11,
+	20.22 16.09,
+	20.14 16.06,
+	20.06 16.05,
+	19.98 16,
+	19.85 15.85,
+	19.78 15.69,
+	19.75 15.61,
+	19.73 15.57,
+	19.72 15.25,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Image mag="0.00749" contrast="1" brightness="0" red="true" green="true" blue="true"
+ src="Alg_stitch3-4_253.tif" />
+<Contour name="domain1" hidden="false" closed="true" simplified="false" border="1 0 1" fill="1 0 1" mode="11"
+ points="0 0,
+	15652 0,
+	15652 8578,
+	0 8578,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Image mag="0.00749" contrast="1" brightness="0" red="true" green="true" blue="true"
+ src="Alg_stitch3-4_253.tif" />
+<Contour name="domain1" hidden="false" closed="true" simplified="false" border="1 0 1" fill="1 0 1" mode="11"
+ points="0 0,
+	15652 0,
+	15652 8578,
+	0 8578,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Image mag="0.00749" contrast="1" brightness="0" red="true" green="true" blue="true"
+ src="Alg_stitch3-4_253.tif" />
+<Contour name="domain1" hidden="false" closed="true" simplified="false" border="1 0 1" fill="1 0 1" mode="11"
+ points="0 0,
+	15652 0,
+	15652 8578,
+	0 8578,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Image mag="0.00749" contrast="1" brightness="0" red="true" green="true" blue="true"
+ src="Alg_stitch3-4_253.tif" />
+<Contour name="domain1" hidden="false" closed="true" simplified="false" border="1 0 1" fill="1 0 1" mode="11"
+ points="0 0,
+	15652 0,
+	15652 8578,
+	0 8578,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Image mag="0.00749" contrast="1" brightness="0" red="true" green="true" blue="true"
+ src="Alg_stitch3-4_253.tif" />
+<Contour name="DENucleus2" hidden="false" closed="true" simplified="false" border="0 0 0.627" fill="0 0 0.627" mode="11"
+ points="0 0,
+	15652 0,
+	15652 8578,
+	0 8578,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Image mag="0.00749" contrast="1" brightness="0" red="true" green="true" blue="true"
+ src="Alg_stitch3-4_253.tif" />
+<Contour name="domain1" hidden="false" closed="true" simplified="false" border="1 0 1" fill="1 0 1" mode="11"
+ points="0 0,
+	15652 0,
+	15652 8578,
+	0 8578,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Image mag="0.00749" contrast="1" brightness="0" red="true" green="true" blue="true"
+ src="Alg_stitch3-4_253.tif" />
+<Contour name="domain1" hidden="false" closed="true" simplified="false" border="1 0 1" fill="1 0 1" mode="11"
+ points="0 0,
+	15652 0,
+	15652 8578,
+	0 8578,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Image mag="0.00749" contrast="1" brightness="0" red="true" green="true" blue="true"
+ src="Alg_stitch3-4_253.tif" />
+<Contour name="domain1" hidden="false" closed="true" simplified="false" border="1 0 1" fill="1 0 1" mode="11"
+ points="0 0,
+	15652 0,
+	15652 8578,
+	0 8578,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Image mag="0.00749" contrast="1" brightness="0" red="true" green="true" blue="true"
+ src="Alg_stitch3-4_253.tif" />
+<Contour name="domain1" hidden="false" closed="true" simplified="false" border="1 0 1" fill="1 0 1" mode="11"
+ points="0 0,
+	15652 0,
+	15652 8578,
+	0 8578,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Image mag="0.00749" contrast="1" brightness="0" red="true" green="true" blue="true"
+ src="Alg_stitch3-4_253.tif" />
+<Contour name="domain1" hidden="false" closed="true" simplified="false" border="1 0 1" fill="1 0 1" mode="11"
+ points="0 0,
+	15652 0,
+	15652 8578,
+	0 8578,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Image mag="0.00749" contrast="1" brightness="0" red="true" green="true" blue="true"
+ src="Alg_stitch3-4_253.tif" />
+<Contour name="domain1" hidden="false" closed="true" simplified="false" border="1 0 1" fill="1 0 1" mode="11"
+ points="0 0,
+	15652 0,
+	15652 8578,
+	0 8578,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Image mag="0.00749" contrast="1" brightness="0" red="true" green="true" blue="true"
+ src="Alg_stitch3-4_253.tif" />
+<Contour name="domain1" hidden="false" closed="true" simplified="false" border="1 0 1" fill="1 0 1" mode="11"
+ points="0 0,
+	15652 0,
+	15652 8578,
+	0 8578,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Image mag="0.00749" contrast="1" brightness="0" red="true" green="true" blue="true"
+ src="Alg_stitch3-4_253.tif" />
+<Contour name="domain1" hidden="false" closed="true" simplified="false" border="1 0 1" fill="1 0 1" mode="11"
+ points="0 0,
+	15652 0,
+	15652 8578,
+	0 8578,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Image mag="0.00749" contrast="1" brightness="0" red="true" green="true" blue="true"
+ src="Alg_stitch3-4_253.tif" />
+<Contour name="domain1" hidden="false" closed="true" simplified="false" border="1 0 1" fill="1 0 1" mode="11"
+ points="0 0,
+	15652 0,
+	15652 8578,
+	0 8578,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Image mag="0.00749" contrast="1" brightness="0" red="true" green="true" blue="true"
+ src="Alg_stitch3-4_253.tif" />
+<Contour name="domain1" hidden="false" closed="true" simplified="false" border="1 0 1" fill="1 0 1" mode="11"
+ points="0 0,
+	15652 0,
+	15652 8578,
+	0 8578,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Image mag="0.00749" contrast="1" brightness="0" red="true" green="true" blue="true"
+ src="Alg_stitch3-4_253.tif" />
+<Contour name="DENucleus2" hidden="false" closed="true" simplified="false" border="0 0 0.627" fill="0 0 0.627" mode="11"
+ points="0 0,
+	15652 0,
+	15652 8578,
+	0 8578,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Image mag="0.00749" contrast="1" brightness="0" red="true" green="true" blue="true"
+ src="Alg_stitch3-4_253.tif" />
+<Contour name="domain1" hidden="false" closed="true" simplified="false" border="1 0 1" fill="1 0 1" mode="11"
+ points="0 0,
+	15652 0,
+	15652 8578,
+	0 8578,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Image mag="0.00749" contrast="1" brightness="0" red="true" green="true" blue="true"
+ src="Alg_stitch3-4_253.tif" />
+<Contour name="domain1" hidden="false" closed="true" simplified="false" border="1 0 1" fill="1 0 1" mode="11"
+ points="0 0,
+	15652 0,
+	15652 8578,
+	0 8578,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Image mag="0.00749" contrast="1" brightness="0" red="true" green="true" blue="true"
+ src="Alg_stitch3-4_253.tif" />
+<Contour name="domain1" hidden="false" closed="true" simplified="false" border="1 0 1" fill="1 0 1" mode="11"
+ points="0 0,
+	15652 0,
+	15652 8578,
+	0 8578,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Contour name="TB1_NF71_LES" hidden="false" closed="true" simplified="true" border="0.223529 0.0862745 0.505882" fill="1 0 0" mode="-11"
+ points="58.3007 23.5266,
+	58.3411 23.4861,
+	58.3209 23.4052,
+	58.3411 23.3243,
+	58.5434 23.0006,
+	58.6041 22.9197,
+	58.6648 22.7579,
+	58.685 22.677,
+	58.8266 22.5151,
+	58.9075 22.4342,
+	58.948 22.3938,
+	59.1098 22.3735,
+	59.1503 22.3735,
+	59.2312 22.4342,
+	59.3121 22.5961,
+	59.2919 22.7579,
+	59.2312 22.9197,
+	58.9682 23.1827,
+	58.7659 23.5064,
+	58.4423 23.5873,
+	58.3007 23.5468,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Contour name="TB1_NF62_LES" hidden="false" closed="true" simplified="true" border="1 0.27451 0.27451" fill="1 0.27451 0.27451" mode="-9"
+ points="59.1312 39.3153,
+	59.184 39.2309,
+	59.2578 39.157,
+	59.3423 39.1043,
+	59.5111 39.0304,
+	59.6799 38.9777,
+	59.8487 38.9565,
+	60.0176 38.9143,
+	60.102 38.8721,
+	60.2708 38.851,
+	60.313 38.851,
+	60.3974 38.8194,
+	60.4396 38.7772,
+	60.4818 38.7772,
+	60.5662 38.735,
+	60.7351 38.7244,
+	60.8195 38.7455,
+	60.9039 38.8088,
+	60.9672 38.8932,
+	60.9778 38.9777,
+	60.9356 39.0621,
+	60.8511 39.1359,
+	60.6823 39.2309,
+	60.5979 39.2731,
+	60.524 39.3575,
+	60.3552 39.4841,
+	60.2708 39.5369,
+	60.102 39.5791,
+	60.0176 39.558,
+	59.9754 39.5474,
+	59.9437 39.5158,
+	59.9332 39.4947,
+	59.9226 39.5158,
+	59.9332 39.5369,
+	59.912 39.558,
+	59.8276 39.5474,
+	59.7432 39.5158,
+	59.6588 39.5052,
+	59.5744 39.5263,
+	59.4056 39.5369,
+	59.3212 39.5474,
+	59.279 39.5474,
+	59.2578 39.5474,
+	59.184 39.4841,
+	59.1523 39.4419,
+	59.1312 39.3575,
+	59.1312 39.3259,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Contour name="TB1_NF62_LES" hidden="false" closed="true" simplified="true" border="1 0.27451 0.27451" fill="1 0.27451 0.27451" mode="-9"
+ points="59.0059 38.4867,
+	59.0585 38.4341,
+	59.0848 38.4078,
+	59.19 38.3683,
+	59.2427 38.3551,
+	59.4531 38.3815,
+	59.5583 38.3946,
+	59.6636 38.3815,
+	59.7162 38.3551,
+	59.7425 38.3288,
+	59.9529 38.342,
+	60.0582 38.3683,
+	60.1634 38.4209,
+	60.216 38.4472,
+	60.3212 38.5524,
+	60.4265 38.6182,
+	60.5317 38.6314,
+	60.558 38.6314,
+	60.5974 38.5261,
+	60.6632 38.4209,
+	60.7027 38.3683,
+	60.7553 38.342,
+	60.8079 38.342,
+	60.9131 38.4078,
+	60.9394 38.4604,
+	60.9394 38.513,
+	60.9526 38.5261,
+	60.9263 38.6314,
+	60.8737 38.684,
+	60.7684 38.6971,
+	60.729 38.7234,
+	60.7421 38.7366,
+	60.5317 38.7761,
+	60.4791 38.8024,
+	60.2686 38.8418,
+	60.216 38.8681,
+	60.0055 38.8944,
+	59.7951 38.947,
+	59.5846 39.026,
+	59.4794 39.026,
+	59.3742 39.0523,
+	59.1637 39.0391,
+	59.1374 39.0391,
+	59.0848 38.9865,
+	59.0454 38.8813,
+	59.0059 38.6708,
+	59.0059 38.5656,
+	59.0059 38.513,
+	59.0059 38.4998,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Contour name="TB1_NF62_LES" hidden="false" closed="true" simplified="true" border="1 0.27451 0.27451" fill="1 0.27451 0.27451" mode="-9"
+ points="57.388 38.3946,
+	57.4406 38.2894,
+	57.5459 38.2499,
+	57.5985 38.2368,
+	57.6511 38.2631,
+	57.6774 38.2894,
+	57.7169 38.3946,
+	57.73 38.4998,
+	57.7169 38.5261,
+	57.7432 38.5656,
+	57.7432 38.5919,
+	57.7037 38.6445,
+	57.5985 38.6577,
+	57.4933 38.5919,
+	57.388 38.4998,
+	57.388 38.4078,
+	"/>
+</Transform>
+
+<Transform dim="0"
+ xcoef=" 0 1 0 0 0 0"
+ ycoef=" 0 0 1 0 0 0">
+<Image mag="0.00749" contrast="1" brightness="0" red="true" green="true" blue="true"
+ src="Alg_stitch3-4_254.tif" />
+<Contour name="TB1_t3cell02_synapse" hidden="false" closed="true" simplified="false" border="0 0 1" fill="0 0 1" mode="11"
+ points="0 0,
+	15652 0,
+	15652 8578,
+	0 8578,
+	"/>
+</Transform>
+
+</Section>
