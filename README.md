@@ -7,7 +7,7 @@ Courtney E. Wilson, Robert S. Lasher, Ernesto Salcedo, Ruibiao Yang, Yannick Dzo
 
 
 
-## Addition Requirements (for mesh display)
+## Additional Requirements (for mesh display)
 - [the MatGeom Library](https://github.com/mattools/matGeom)
 
 ## Computer Specifications
@@ -20,7 +20,7 @@ You can review and run the scripts on MATLAB online by clicking on the following
 
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=salcedoe/Dying_Taste_Cell_analysis&file=nuclei_display.mlx)
 
-- NOTE: You will need to sign up for a free [MATLAB Online](https://www.mathworks.com/products/matlab-online.html) account first. 
+- NOTE: You will need to sign up for [MATLAB Online](https://www.mathworks.com/products/matlab-online.html) account if you don't have one already (there is a free version). 
 - NOTE: There is about a gigabyte's worth of data in this repository so it may take some time to clone to the MATLAB drive.
 	
 
