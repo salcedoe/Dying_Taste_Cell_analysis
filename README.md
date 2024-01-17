@@ -14,7 +14,13 @@ Courtney E. Wilson, Robert S. Lasher, Ernesto Salcedo, Ruibiao Yang, Yannick Dzo
 
 Software developed using MATLAB 2023b on a Macintosh computer with an Apple M1 Pro Apple silicon chip running OS X 14.2.1 (Sonoma). Trace Data collection was run on a PC computer running Windows #.# using Legacy Reconstruct: https://synapseweb.clm.utexas.edu 
 
+## MATLAB online
+
+You can review and run the scripts on MATLAB online by clicking on the following: 
+
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=salcedoe/Dying_Taste_Cell_analysis&file=nuclei_display.mlx)
+
+	NOTE: You will need to sign up for a free [MATLAB Online](https://www.mathworks.com/products/matlab-online.html) account first. 
 
 #MATLAB #Reconstruct
 
