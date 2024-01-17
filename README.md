@@ -20,7 +20,9 @@ You can review and run the scripts on MATLAB online by clicking on the following
 
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=salcedoe/Dying_Taste_Cell_analysis&file=nuclei_display.mlx)
 
-	NOTE: You will need to sign up for a free [MATLAB Online](https://www.mathworks.com/products/matlab-online.html) account first. 
+- NOTE: You will need to sign up for a free [MATLAB Online](https://www.mathworks.com/products/matlab-online.html) account first. 
+- NOTE: There is about a gigabyte's worth of data in this repository so it may take some time to clone to the MATLAB drive.
+	
 
 #MATLAB #Reconstruct
 
