@@ -18,14 +18,16 @@ Software developed using MATLAB 2023b on a Macintosh computer with an Apple M1 P
 You can review and run the scripts on MATLAB online by clicking on the following: 
 
 [![Open in MATLAB Online][image-1]][2]
+
+
 Please note:
 - You will need to sign up for [MATLAB Online][3] account if you don't have one already (there is a free version). 
 - There is about a gigabyte's worth of data in this repository so it may take some time to clone to the MATLAB drive.
 
-[1]:	https://github.com/mattools/matGeom
-[2]:	https://matlab.mathworks.com/open/github/v1?repo=salcedoe/Dying_Taste_Cell_analysis&file=nuclei_display.mlx
-[3]:	https://www.mathworks.com/products/matlab-online.html
+[1]: https://github.com/mattools/matGeom
+[2]: https://matlab.mathworks.com/open/github/v1?repo=salcedoe/Dying_Taste_Cell_analysis&file=nuclei_display.mlx
+[3]: https://www.mathworks.com/products/matlab-online.html
 
-[image-1]:	https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg
+[image-1]: https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg
 
 #MATLAB #Reconstruct
