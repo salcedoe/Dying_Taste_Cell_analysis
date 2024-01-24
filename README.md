@@ -6,23 +6,26 @@ Morphological features of dying taste cells and implications for a novel role fo
 Courtney E. Wilson, Robert S. Lasher, Ernesto Salcedo, Ruibiao Yang, Yannick Dzowo, John C. Kinnamon, Thomas E. Finger.
 
 
-
 ## Additional Requirements (for mesh display)
-- [the MatGeom Library](https://github.com/mattools/matGeom)
+- [the MatGeom Library][1]
 
 ## Computer Specifications
 
-Software developed using MATLAB 2023b on a Macintosh computer with an Apple M1 Pro Apple silicon chip running OS X 14.2.1 (Sonoma). Trace Data collection was run on a PC computer running Windows #.# using Legacy Reconstruct: https://synapseweb.clm.utexas.edu 
+Software developed using MATLAB 2023b on a Macintosh computer with an Apple M1 Pro Apple silicon chip running OS X 14.2.1 (Sonoma). Trace Data collection was run on a PC computer running Windows 10Pro using Legacy Reconstruct: https://synapseweb.clm.utexas.edu 
 
 ## MATLAB online
 
 You can review and run the scripts on MATLAB online by clicking on the following: 
 
-[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=salcedoe/Dying_Taste_Cell_analysis&file=nuclei_display.mlx)
+[![Open in MATLAB Online][image-1]][2]
 
-- NOTE: You will need to sign up for [MATLAB Online](https://www.mathworks.com/products/matlab-online.html) account if you don't have one already (there is a free version). 
+- NOTE: You will need to sign up for [MATLAB Online][3] account if you don't have one already (there is a free version). 
 - NOTE: There is about a gigabyte's worth of data in this repository so it may take some time to clone to the MATLAB drive.
-	
+
+[1]:	https://github.com/mattools/matGeom
+[2]:	https://matlab.mathworks.com/open/github/v1?repo=salcedoe/Dying_Taste_Cell_analysis&file=nuclei_display.mlx
+[3]:	https://www.mathworks.com/products/matlab-online.html
+
+[image-1]:	https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg
 
 #MATLAB #Reconstruct
-
