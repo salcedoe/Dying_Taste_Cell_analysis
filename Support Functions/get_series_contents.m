@@ -17,6 +17,13 @@ function [SL,TL] = get_series_contents(series_path, load_file)
 
 if load_file && exist(fullfile(series_path, 'SeriesTrace.mat'),'file')
     load(fullfile(series_path, 'SeriesTrace.mat'),'SL', 'TL')
+
+    if ~strcmp(SL.Properties.UserData.paths.series, series_path)
+        SL.Properties.UserData.paths.series = series_path;
+        SL.Properties.UserData.paths.analysis = fileparts(mfilename('fullpath'));
+        save(fullfile(series_path, 'SeriesTrace.mat'), 'SL', 'TL')
+    end
+
     disp('loading saved trace and series info...')
     return
 end

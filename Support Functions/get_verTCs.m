@@ -22,6 +22,13 @@ VLfile = fullfile(SL.Properties.UserData.paths.series, ['VerticesList'  fTL.Prop
 
 if nargin>2 && load_last && exist(VLfile,'file')
     load(VLfile, 'VL')
+
+    % check saved file path in case folder renamed or moved
+    if ~strcmp(VL.Properties.UserData.file, VLfile) 
+        VL.Properties.UserData.file = VLfile;
+        save(VLfile, 'VL')
+    end
+
     disp('VL loaded from File')
     return
 end
