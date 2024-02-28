@@ -58,7 +58,7 @@ for n=1:count
 
     if exist(paths.manifoldPlus,"file")
         mesh = surfaceMesh(shp.Points,shp.boundaryFacets); % create mesh object
-        meshManifold = getWaterTightMesh(mesh, idT.Cell(n),paths.temp,paths.manifoldPlus);
+        meshManifold = getWaterTightMesh(mesh, idT.Cell(n),paths);
 
         if ~isempty(meshManifold)
             cellT.VolMan(n) = meshVolume(meshManifold.Vertices, meshManifold.Faces); % calculate watertight mesh

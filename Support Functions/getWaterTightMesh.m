@@ -1,4 +1,4 @@
-function manifoldMesh = getWaterTightMesh(mesh,mesh_name, temp_folder,manifoldPlusPath)
+function manifoldMesh = getWaterTightMesh(mesh,mesh_name, paths)
 %GETWATERTIGHTMESH Accepts a mesh object (Lidar Toolbox) and returns a
 %(more) water tight mesh (less holes). 
 % This function actually uses a system call to the terminal (on a mac). The
@@ -26,20 +26,18 @@ function manifoldMesh = getWaterTightMesh(mesh,mesh_name, temp_folder,manifoldPl
 arguments
     mesh surfaceMesh
     mesh_name {mustBeText}
-    temp_folder {mustBeFolder}
-    manifoldPlusPath {mustBeFile}
+    paths struct % must contain temp and manifoldPlus fields
 end
 
+% mesh_name = replace(mesh_name,whitespacePattern,"_"); % spaces in name make manifoldPlus crash
 
 ext = ".obj";
-obj_in = fullfile(temp_folder, mesh_name + ext); % MATLAB surface mesh file
+obj_in = fullfile(paths.temp, mesh_name + ext); % MATLAB surface mesh file
 writeSurfaceMesh(mesh,obj_in) % write OBJ file
 
-% manifoldPlusPath = "/Users/ernesto/github/ManifoldPlus/build/manifold"; % ManifoldPlus file (must be hard coded in)
-
 input_file = obj_in;
-output_file = fullfile(temp_folder, mesh_name + "_manifold" + ext);
-command = sprintf('%s --input %s --output %s --depth 8', manifoldPlusPath, input_file, output_file);
+output_file = fullfile(paths.temp, mesh_name + "_manifold" + ext);
+command = sprintf('%s --input "%s" --output "%s" --depth 8', paths.manifoldPlus, input_file, output_file);
 % [status,cmdout] = system(command);
 status = system(command);
 

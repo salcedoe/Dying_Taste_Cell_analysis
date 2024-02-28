@@ -11,6 +11,7 @@ end
 PC = pointCloud(verts);
 % SM = pc2surfacemesh(PC,"ball-pivot",[50,50,70]);
 [SM, ~] = pc2surfacemesh(PC,"ball-pivot");
+
 removeDefects(SM,"nonmanifold-edges")
 removeDefects(SM,"degenerate-faces")
 removeDefects(SM,"unreferenced-vertices")
