@@ -6,5 +6,5 @@ function fh = mmfig()
 % Site: University of Colorado School of Medicine
 % updated: 1/13/2024
 
-fh = figure(Visible="on",WindowStyle="docked",Color='white');
+fh = figure(Visible="on",WindowStyle="docked",Color='white',MenuBar='figure',ToolBar='figure');
 end

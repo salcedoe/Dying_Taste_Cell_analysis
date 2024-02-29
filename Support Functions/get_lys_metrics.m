@@ -47,13 +47,7 @@ for m=1:height(idT)
     PC = pointCloud(vl{:,["x" "y" "z"]}); % convert to point cloud
     SegLbl = vl.SegmentLabel;
 
-    %     count = max(SegLbl);
-    %     z = zeros(count,1);
-    %     typename = repmat(vl.Type(1),count,1);
-    %     objname = repmat(vl.Object(1),count,1);
-    %     t = table(objname,typename,z,z,z,'VariableNames',["Object","Type","SegmentLabel","Volume","SurfaceArea"]);
-
-    for n=unique(SegLbl)'
+       for n=unique(SegLbl)'
 
         la = SegLbl == n;
         PCselect = select(PC,la);
@@ -61,13 +55,13 @@ for m=1:height(idT)
         if isscalar(unique(PCselect.Location(:,3))) % if just one z slice
             pts = PCselect.Location;
             pts = [pts;...
-                pts(:,1:2) pts(:,3)+10]; % duplicate points to the next slice to create cylinder
+                pts(:,1:2) pts(:,3)+0.08]; % duplicate points to the next slice to create cylinder
         else
             pts = PCselect.Location;
         end
 
         %3D analysis
-        shp3d = alphaShape(pts); % originally a setting of 2
+        shp3d = alphaShape(pts,1); % omitting the setting makes the calculation ribbon like
 
         %2D Analysis - areas of individual traces
         grp2d = findgroups(pts(:,3));
