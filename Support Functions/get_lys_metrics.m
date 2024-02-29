@@ -12,6 +12,8 @@ end
 
 idT = VL.Properties.UserData.idT;
 
+thicknessD = dictionary(["TF21" "DS2"],[0.08 0.075]); % different datasets have different slice thicknesses
+
 % la = idT.Structure == "lysosome";
 %
 % idt = idT(la,:);
@@ -43,6 +45,7 @@ for m=1:height(idT)
 
     object = idT.Lysosome(m);
     vl = VL(VL.Object == object,:); % subtable of current object
+    sliceThickness = thicknessD(idT.Dataset(m)); % get slice thickness of dataset
 
     PC = pointCloud(vl{:,["x" "y" "z"]}); % convert to point cloud
     SegLbl = vl.SegmentLabel;
@@ -55,7 +58,7 @@ for m=1:height(idT)
         if isscalar(unique(PCselect.Location(:,3))) % if just one z slice
             pts = PCselect.Location;
             pts = [pts;...
-                pts(:,1:2) pts(:,3)+0.08]; % duplicate points to the next slice to create cylinder
+                pts(:,1:2) pts(:,3)+sliceThickness]; % duplicate points to the next slice to create cylinder
         else
             pts = PCselect.Location;
         end
