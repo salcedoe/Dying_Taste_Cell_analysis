@@ -31,7 +31,6 @@ c = categorical(NaN(count,1));
 
 cellT = table(s, c,z, z, z, z3, ...
     VariableNames=["Object","Type","Volume","VolMan","SurfaceArea","Range"]); % VolManifold
-% alpha = 100;
 
 for n=1:count
     fprintf("%d. %s\n",n,idT.Cell(n))
@@ -78,7 +77,8 @@ type(cellT.Health=="late") = 'ld';
 cellT.PlotSort = categorical(type,{'IV','III','II','I','ld','ed'},'ordinal',true);
 cellT.Polarity = ones(height(cellT),1);
 
-
+cellT.Properties.UserData.path = fullfile(paths.analysis,"cellT.mat");
+save(cellT.Properties.UserData.path,"cellT");
 % T.Object = categorical(T.Object);
 % T.Type = categorical(T.Type);
 
