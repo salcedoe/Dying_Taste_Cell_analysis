@@ -11,8 +11,12 @@ arguments
     alpha {mustBeNonnegative,mustBeScalarOrEmpty} = []
 end
 
-if ~exist(paths.temp,"dir")
-    mkdir(paths.temp)
+if exist(paths.manifoldPlus,"file")
+    if ~exist(paths.temp,"dir")
+        mkdir(paths.temp)
+    end
+else
+    fprintf('Missing manifoldPlus Function. Watertight mesh volumes not calculated')
 end
 
 idT  = VL.Properties.UserData.idT;
@@ -20,7 +24,6 @@ idT  = VL.Properties.UserData.idT;
 % suppress alpha shape warnings
 id = 'MATLAB:alphaShape:DupPointsBasicWarnId';
 warning('off',id);
-
 
 % preallocate table
 count = height(idT);
@@ -55,19 +58,10 @@ for n=1:count
     cellT.SurfaceArea(n) = shp.surfaceArea;
     cellT.Range(n,:) = range(vCell);
 
-    if exist(paths.manifoldPlus,"file")
-        mesh = surfaceMesh(shp.Points,shp.boundaryFacets); % create mesh object
-        meshManifold = getWaterTightMesh(mesh, idT.Cell(n),paths);
+    % calculate manifold mesh (watertight)
+    mesh = surfaceMesh(shp.Points,shp.boundaryFacets); % create mesh object
+    [~,cellT.VolMan(n)] = getWaterTightMesh(mesh, idT.Cell(n),paths);       
 
-        if ~isempty(meshManifold)
-            cellT.VolMan(n) = meshVolume(meshManifold.Vertices, meshManifold.Faces); % calculate watertight mesh
-        else
-            cellT.VolMan(n) = nan;
-        end
-    else
-        fprintf('%s watertight manifold not calcuated',idT.Cell(n))
-    end
-    
 end
 cellT.Health = categorical(cellT.Health);
 cellT.SAV = cellT.SurfaceArea ./ cellT.Volume;
