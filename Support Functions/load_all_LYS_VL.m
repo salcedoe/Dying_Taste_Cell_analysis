@@ -52,7 +52,7 @@ fprintf('\nGetting VL segmentation labels...\n')
 % VL(:,["x","y","z"]) = varfun(@(x) x * 8/1000,VL,InputVariables=["x","y","z"]); % convert to microns
 VL.Properties.VariableUnits(3:5) = repmat({'µm'},1,3);
 VL.Properties.UserData.idT = idT;
-VL.Properties.UserData.file = fullfile(paths.analysis,"lysosomesVL.mat"); % same folder as live script
+VL.Properties.UserData.file = fullfile(paths.lysosome,"lysosomesVL.mat"); % same folder as live script
 save(VL.Properties.UserData.file,"VL")
 fprintf('VL saved as %s\n',VL.Properties.UserData.file)
 

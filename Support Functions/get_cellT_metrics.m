@@ -71,7 +71,7 @@ type(cellT.Health=="late") = 'ld';
 cellT.PlotSort = categorical(type,{'IV','III','II','I','ld','ed'},'ordinal',true);
 cellT.Polarity = ones(height(cellT),1);
 
-cellT.Properties.UserData.path = fullfile(paths.analysis,"cellT.mat");
+cellT.Properties.UserData.path = fullfile(paths.lysosome,"cellT.mat");
 save(cellT.Properties.UserData.path,"cellT");
 % T.Object = categorical(T.Object);
 % T.Type = categorical(T.Type);
