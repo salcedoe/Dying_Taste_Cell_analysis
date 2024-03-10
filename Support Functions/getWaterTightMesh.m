@@ -31,13 +31,13 @@ arguments
     shp alphaShape
     mesh_name {mustBeText}
     paths struct % must contain temp and manifoldPlus fields
-    options.cellDir {mustBeText} % fieldname in paths structure that contains the path for the working dir
+    options.path2use {mustBeText} % fieldname in paths structure that contains the path for the working dir
 end
 
 pymeshfix = py.importlib.import_module('pymeshfix'); % add python pymeshfix library
 
 if ~isempty(options) && isfield(options,'path2use')
-    cellDir = paths.(options.cellDir);
+    cellDir = paths.(options.path2use);
 else
     cellDir = paths.cellMesh;
 end
