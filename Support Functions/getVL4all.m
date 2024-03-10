@@ -1,5 +1,5 @@
-function VL = load_all_LYS_VL(paths, idT, loadT)
-%LOAD_ALL_LYS_VL wrapper function that loads all cell data identified in idT
+function VL = getVL4all(paths, idT, loadT)
+%GETVL4ALL wrapper function that loads all trace data identified in idT
 %   Analysis: Lysosome Analysis
 % OUTPUT
 %   - VL: vertices list table contains the x,y,z coordinates of the cells
@@ -33,12 +33,14 @@ for n = 1:height(loadT)
     vl = get_seg_labels(vl);
     vl.Dataset = repmat(loadT.Dataset(n),height(vl),1);
 
-    switch loadT.Dataset(n) % scale to um
-        case 'TF21'
-            vl(:,["x","y","z"]) = varfun(@(x) x * 8/1000,vl,InputVariables=["x","y","z"]); % convert to microns
-        case 'DS2'
-            vl(:,["x","y","z"]) = varfun(@(x) x * 7.49/1000,vl,InputVariables=["x","y","z"]); % convert to microns
-    end
+    img_mag = vl.Properties.UserData.img_mag;
+    vl(:,["x","y","z"]) = varfun(@(x) x * img_mag,vl,InputVariables=["x","y","z"]); % convert to microns
+    % switch loadT.Dataset(n) % scale to um
+    %     case 'TF21'
+    %         vl(:,["x","y","z"]) = varfun(@(x) x * 8/1000,vl,InputVariables=["x","y","z"]); % convert to microns
+    %     case 'DS2'
+    %         vl(:,["x","y","z"]) = varfun(@(x) x * 7.49/1000,vl,InputVariables=["x","y","z"]); % convert to microns
+    % end
 
     fprintf('vl height: %d\n',height(vl))
     %     height(VL), height(vl),height(VL) + height(vl))
