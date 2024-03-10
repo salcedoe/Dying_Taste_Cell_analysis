@@ -60,9 +60,13 @@ for n=1:count
 
     % calculate manifold mesh (watertight)
     mesh = surfaceMesh(shp.Points,shp.boundaryFacets); % create mesh object
-    [~,cellT.VolMan(n)] = getWaterTightMesh(mesh, idT.Cell(n),paths);       
+    [~,cellT.VolMan(n)] = getWaterTightMesh(mesh, idT.Cell(n),paths);
+
+
+
 
 end
+
 cellT.Health = categorical(cellT.Health);
 cellT.SAV = cellT.SurfaceArea ./ cellT.Volume;
 type = cellT.Type;

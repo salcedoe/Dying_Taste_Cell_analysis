@@ -8,7 +8,7 @@ arguments
     cell_render_method {mustBeText} % render method: we're using alphaShape for all plots
 end
 
-[vCell, vLys, szLys] = getVertsFromCellID(VL, object,polarity); % align point clouds to axes
+[vCell, vLys, szLys] = getVertsAndAlign(VL, object,polarity); % align point clouds to axes
 
 % PC = pointCloud(vLys); % healthy lysosomes
 

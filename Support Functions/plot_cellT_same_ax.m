@@ -21,7 +21,7 @@ for n=1:height(cellT)
     object = cellT.Object(n);
     polarity = cellT.Polarity(n);
 
-    vCell = getVertsFromCellID(VL, object,polarity); % align point clouds to axes
+    vCell = getVertsAndAlign(VL, object,polarity); % align point clouds to axes
 
     vCell = vCell - mean(vCell);
     vCell = mmAlignSurface2Axes(vCell);

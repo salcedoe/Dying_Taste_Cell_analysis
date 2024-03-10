@@ -47,7 +47,7 @@ fprintf('Rendering...\n')
 
 for n=1:total
         
-    [vCell, vLys, szLys] = getVertsFromCellID(VL, cellT.Object(n),cellT.Polarity(n)); % align point clouds to axes
+    [vCell, vLys, szLys] = getVertsAndAlign(VL, cellT.Object(n),cellT.Polarity(n)); % align point clouds to axes
 
     % plot surfaces
     ax(n) = nexttile(tile_idx(n));
