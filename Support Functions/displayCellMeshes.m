@@ -15,7 +15,7 @@ for n=1:3
     fullpath = fullfile(folderPath,contents(n).name);
     mesh = readSurfaceMesh(fullpath);
     fprintf('%d. %s - %d\n',n,contents(n).name,mesh.isWatertight);
-    hvwr(n) = viewer3d(BackgroundGradient="off");
+    hvwr(n) = viewer3d(BackgroundGradient="off",BackgroundColor='w');
     surfaceMeshShow(mesh,Title=sprintf('%d. %s',n,contents(n).name),Parent=hvwr(n))
 end
 linkprop(hvwr,{'CameraPosition','CameraZoom'})

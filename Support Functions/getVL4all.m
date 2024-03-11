@@ -49,7 +49,6 @@ for n = 1:height(loadT)
     VL = [VL; vl];
 end
 
-fprintf('\nGetting VL segmentation labels...\n')
 % VL = get_seg_labels(VL); % find individual lysosomes
 % VL(:,["x","y","z"]) = varfun(@(x) x * 8/1000,VL,InputVariables=["x","y","z"]); % convert to microns
 VL.Properties.VariableUnits(3:5) = repmat({'µm'},1,3);

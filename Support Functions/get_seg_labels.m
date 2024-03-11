@@ -3,6 +3,7 @@ function VL = get_seg_labels(VL)
 %lysosome a size label (relative size overall). 
 % Size Label: a numeric ranking of lysosome volume (1 = smallest, height of table = largest), used for color maps
 
+fprintf('\nGetting VL segmentation labels...\n')
 
 VL.SegmentLabel = zeros(height(VL),1);
 for n=unique(VL.Object)'
