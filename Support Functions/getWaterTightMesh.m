@@ -52,22 +52,22 @@ if exist(paths.manifoldPlus,"file")
     for n=1:numel(fdec)
         fpaths.(fdec(n)) = fullfile(cellDir, mesh_name + "_" + fdec(n) + ext); 
     end
-    shp = surfaceMesh(shp.Points,shp.boundaryFacets); % create mesh object
-    
-    writeSurfaceMesh(shp,fpaths.as) % write alphaShape obj file
+    mesh = surfaceMesh(shp.Points,shp.boundaryFacets); % create mesh object
+    [mesh] = sMrD(mesh); % remove mesh defects
+    writeSurfaceMesh(mesh,fpaths.as) % write alphaShape obj file
 
     % write manifoldPlus obj file;
     command = sprintf('%s --input "%s" --output "%s" --depth 6', paths.manifoldPlus, fpaths.as, fpaths.mp); 
-    status = system(command);
+    [status,~] = system(command);
 
     if ~status % if manifoldPlus worked
-        shp = readSurfaceMesh(fpaths.mp);
-        volMP = meshVolume(shp.Vertices,shp.Faces);       
+        mesh = readSurfaceMesh(fpaths.mp);
+        volMP = meshVolume(mesh.Vertices,mesh.Faces);       
 
         % generate meshfx mesh
         pymeshfix.clean_from_file(fpaths.mp, fpaths.fx); % write meshfx obj file
-        shp = readSurfaceMesh(fpaths.fx); % read it back in
-        volFX = meshVolume(shp.Vertices,shp.Faces);
+        mesh = readSurfaceMesh(fpaths.fx); % read it back in
+        volFX = meshVolume(mesh.Vertices,mesh.Faces);
     else
        volMP=Nan;
        volFX=Nan;
