@@ -5,9 +5,12 @@ Morphological features of dying taste cells and implications for a novel role fo
 
 Courtney E. Wilson, Robert S. Lasher, Ernesto Salcedo, Ruibiao Yang, Yannick Dzowo, John C. Kinnamon, Thomas E. Finger.
 
+## Additional Requirements
 
-## Additional Requirements (for mesh display)
 - [the MatGeom Library][1]
+- [ManifoldPlus](https://github.com/hjwdzh/ManifoldPlus) - helps make watertight meshes
+- [pyMeshFix](https://pymeshfix.pyvista.org) - helps make watertight meshes even more.
+- [The Mathworks Lidar Toolbox](https://www.mathworks.com/products/lidar.html) - for surface mesh display, read, and write functions
 
 ## Computer Specifications
 
