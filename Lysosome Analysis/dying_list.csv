@@ -1,0 +1,12 @@
+﻿ID,Object,Type,Health,TB
+TB2_TCdying01,TB2_TCdying-01_cw,x,late,TB2
+TB2_TCdying01,TB2_TCdying-01-apical_cw,x,late,TB2
+TB2_TCdying02,TB2_TCdying-02_cw,x,late,TB2
+TB2_TCdying02,TB2_TCdying-02_bits_cw,x,late,TB2
+TB3_TC02,TB3_TC02_T2dying_cw,II,early,TB3
+TB3_TC03,TB3_TC03_cw,III,early,TB3
+TB3_TC04,TB3_TC04_T2dying_cw,II,early,TB3
+TB3_TC05,TB3_TC05_T2dying_cw,II,early,TB3
+TB3_TC06,TB3_TC06_T3dying_cw,III,early,TB3
+TB3_TC01,TB3_TC01_dying_cw,x,late,TB3
+TB3_TC01,TB3_TC01_bits_cw,x,late,TB3
