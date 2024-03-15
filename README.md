@@ -23,7 +23,7 @@ You can review and run the scripts on MATLAB online by clicking on the following
 
 Live scripts were run in this order
 
-1. [generate_VL_lysT.mlx](/Lysosome Analysis/generate_VL_lysT.mlx)
+1. [generate_VL_lysT.mlx](Lysosome Analysis/generate_VL_lysT.mlx)
 
 
 Please note:
