@@ -2,7 +2,7 @@
 # Wavefront OBJ file
 # Created with Autodesk FBX SDK
 # 
-g _Users_ernesto_github_Dying_Taste_Cell_analysis_Lysosome_Analysis_dyingMeshes_TB3_TC03_as_obj
+g _Users_ernesto_github_Dying_Taste_Cell_analysis_Lysosome_Analysis_cellMeshes_TB3_TC03_as_obj
 v -8.320648 -4.959283 1.832218
 v -8.340135 -4.951959 1.774702
 v -8.349435 -4.948335 1.745710
@@ -18687,7 +18687,6 @@ f 5339 5470 5340
 f 5471 5340 5470
 f 5472 5473 5341
 f 2946 2904 2903
-f 2894 2893 2677
 f 2676 2894 2677
 f 2676 2893 2894
 f 3420 3546 3355
@@ -18922,7 +18921,6 @@ f 2804 2867 2463
 f 2373 2465 2433
 f 2435 2468 2469
 f 2435 2434 2468
-f 2805 2893 2894
 f 2895 2805 2894
 f 3351 3201 3349
 f 3351 3349 3350

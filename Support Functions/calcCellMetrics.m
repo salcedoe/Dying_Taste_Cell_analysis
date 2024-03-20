@@ -7,7 +7,8 @@ arguments
 end
 
 % generate paths
-meshFolder = fileparts(meshT.Properties.UserData.path);
+% meshFolder = fileparts(meshT.Properties.UserData.path);
+meshFolder = meshT.Properties.UserData.meshPath;
 
 % preallocate table
 count = height(meshT);
