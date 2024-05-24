@@ -23,7 +23,7 @@ You can review and run the scripts on MATLAB online by clicking on the following
 [![Open in MATLAB Online][image-1]][2]
 
 Please note:
-- You will need to sign up for [MATLAB Online][3] account if you don't have one already (contrary to popular belief, there is a free version). 
+- You will need to sign up for [MATLAB Online][3] account if you don't have one already (contrary to popular belief, there is a free version for basic use). 
 
 ## Nuclei Analysis
 

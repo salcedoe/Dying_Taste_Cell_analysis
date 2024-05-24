@@ -13,8 +13,8 @@ patch(Faces=mesh.Faces,Vertices=mesh.Vertices, ...
     FaceColor=fcolor, ...
     edgeAlpha = 0.1)
 axis equal off
-xlim([-10 10])
-ylim([-10 10])
+xlim([-15 15])
+ylim([-15 15])
 zlim([-50 50])
 
 set(gca,CameraTarget=[0,0,0])

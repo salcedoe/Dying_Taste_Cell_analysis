@@ -1,12 +1,20 @@
-﻿ID,Object,Type,Health,TB
-TB2_TCdying01,TB2_TCdying-01_cw,x,late,TB2
-TB2_TCdying01,TB2_TCdying-01-apical_cw,x,late,TB2
-TB2_TCdying02,TB2_TCdying-02_cw,x,late,TB2
-TB2_TCdying02,TB2_TCdying-02_bits_cw,x,late,TB2
-TB3_TC02,TB3_TC02_T2dying_cw,II,early,TB3
-TB3_TC03,TB3_TC03_cw,III,early,TB3
-TB3_TC04,TB3_TC04_T2dying_cw,II,early,TB3
-TB3_TC05,TB3_TC05_T2dying_cw,II,early,TB3
-TB3_TC06,TB3_TC06_T3dying_cw,III,early,TB3
-TB3_TC01,TB3_TC01_dying_cw,x,late,TB3
-TB3_TC01,TB3_TC01_bits_cw,x,late,TB3
+﻿Cell,Object,Type,Health,TB,Dataset,Folder,Mesh,comments
+TB2_T2_14,TB2_T2cell14_CM_LES,II,healthy,TB3,DS2,ROB_DS2,0,"6-5-23, "
+TB1_AP68,TB1_AP68_EM,III,early,TB1,TF21,ROB_TF21_TB1,0 ,
+TB1_AP43,TB1_AP43_EM,II,early,TB1,TF21,ROB_TF21_TB1,0,
+TB1_T2C05,TB1_T2cell05_CM_RKJ,II,early,TB1,DS2,ROB_DS2,0,
+TB1_T2C06,TB1_T2cell06_CM_RKJ,II,early,TB1,DS2,ROB_DS2,0,
+TB1_T2C11,TB1_T2Cell11_CM_LES,II,early,TB1,DS2,ROB_DS2,0,
+TB2_T2C-01,TB2_T2C-01_FR,II,early,TB2,TF21,Courtney_TF21,1,
+TB2_T2C-03,TB2_T2C-03,II,early,TB2,TF21,Courtney_TF21,1,
+TB2_TCdying01,TB2_TCdying-01-apical_cw,x,late,TB2,TF21,Courtney_TF21,1,
+TB2_TCdying01,TB2_TCdying-01_cw,x,late,TB2,TF21,Courtney_TF21,1,
+TB2_TCdying02,TB2_TCdying-02_bits_cw,x,late,TB2,TF21,Courtney_TF21,1,
+TB2_TCdying02,TB2_TCdying-02_cw,x,late,TB2,TF21,Courtney_TF21,1,
+TB3_TC01,TB3_TC01_bits_cw,x,late,TB3,TF21,Courtney_TF21,1,
+TB3_TC01,TB3_TC01_dying_cw,x,late,TB3,TF21,Courtney_TF21,1,
+TB3_TC02,TB3_TC02_T2dying_cw,II,early,TB3,TF21,Courtney_TF21,1,
+TB3_TC03,TB3_TC03_cw,III,early,TB3,TF21,Courtney_TF21,1,
+TB3_TC04,TB3_TC04_T2dying_cw,II,early,TB3,TF21,Courtney_TF21,1,
+TB3_TC05,TB3_TC05_T2dying_cw,II,early,TB3,TF21,Courtney_TF21,1,
+TB3_TC06,TB3_TC06_T3dying_cw,III,early,TB3,TF21,Courtney_TF21,1,
