@@ -1,6 +1,6 @@
 # Dying Taste Cell analysis
 
-Scripts and sample data featured in our "Death in the taste bud:
+Scripts and sample data featured in our "Death in the Taste Bud:
 Morphological features of dying taste cells and implications for a novel role for Type I Cells." 
 
 Courtney E. Wilson, Robert S. Lasher, Ernesto Salcedo, Ruibiao Yang, Yannick Dzowo, John C. Kinnamon, Thomas E. Finger.
@@ -9,7 +9,7 @@ Courtney E. Wilson, Robert S. Lasher, Ernesto Salcedo, Ruibiao Yang, Yannick Dzo
 
 - [The MatGeom Library][1]
 - [ManifoldPlus](https://github.com/hjwdzh/ManifoldPlus) - helps make watertight meshes
-- [pyMeshFix](https://pymeshfix.pyvista.org) - helps make watertight meshes even more.
+- [pyMeshFix](https://pymeshfix.pyvista.org) - helps make watertight meshes even more watertight.
 - [The Mathworks Lidar Toolbox](https://www.mathworks.com/products/lidar.html) - for surface mesh display, read, and write functions
 
 ## Computer Specifications
@@ -23,7 +23,7 @@ You can review and run the scripts on MATLAB online by clicking on the following
 [![Open in MATLAB Online][image-1]][2]
 
 Please note:
-- You will need to sign up for [MATLAB Online][3] account if you don't have one already (contrary to popular belief, there is a free version for basic use). 
+- You will need to sign up for a [MATLAB Online][3] account if you don't have one already (contrary to popular belief, there is a free version for basic use). 
 
 ## Nuclei Analysis
 
@@ -36,7 +36,7 @@ Generate Surface Meshes of the Cells and the Lysosomes. Calculate statistics on 
 Live scripts were run in this order
 
 1. [generate_VL_lysT.mlx](/Lysosome%20Analysis/generate_VL_lysT.mlx) - Imports traces from Reconstruct into a MATLAB table, `VL`. Also generates a table, `lysT` that organizes the lysosome metrics, like volume and count per cell.
-2. [generate_cellMesh_cellT.mlx][4] - Generates 3D surface meshes of taste cells, which are save to the cellMeshes folder. Generates the `cellT` table that organizes calculated cell metrics, like volume and surface area.
+2. [generate_cellMesh_cellT.mlx][4] - Generates 3D surface meshes of taste cells, which are saved to the cellMeshes folder. Generates the `cellT` table that organizes calculated cell metrics, like volume and surface area.
 3. [generate_dyingMesh_dyingT.mlx](/Lysosome%20Analysis/generate_dyingMesh_dyingT.mlx) - similar to the [generate_cellMesh_cellT.mlx][4] script, this script generates 3D surface meshes for dying cells and a MATLAB table, `dyingT`, that organizes the calculated metrics for dying cells.
 4. [cell_viz_stats.mlx](/Lysosome%20Analysis/cell_viz_stats.mlx) - visualize cell surface meshes as MATLAB patch plots. Calculate the statistics on cell metrics.
 5. [lys_viz_stats.mlx](/Lysosome%20Analysis/lys_viz_stats.mlx) - visualizes the lysosomes as 3D patch plots. Calculates the statistics on lysosome metrics.
