@@ -62,9 +62,6 @@ for n=1:count
     mesh = surfaceMesh(shp.Points,shp.boundaryFacets); % create mesh object
     [~,cellT.VolMan(n)] = getWaterTightMesh(mesh, idT.Cell(n),paths);
 
-
-
-
 end
 
 cellT.Health = categorical(cellT.Health);

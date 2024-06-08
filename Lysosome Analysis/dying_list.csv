@@ -6,11 +6,11 @@ TB1_T2C05,TB1_t2cell05_CM_RKJ,II,early,TB1,DS2,ROB_DS2,0,
 TB1_T2C06,TB1_t2cell06_CM_RKJ,II,early,TB1,DS2,ROB_DS2,0,
 TB1_T2C11,TB1_T2Cell11_CM_LES,II,early,TB1,DS2,ROB_DS2,0,
 TB2_T2C-01,TB2_T2C-01_FR,II,early,TB2,TF21,Courtney_TF21,1,
-TB2_TCdying01,TB2_TCdying-01-apical_cw,x,late,TB2,TF21,Courtney_TF21,1,
+TB2_TCdying01,TB2_TCdying-01-apical_cw,x,late,TB2,TF21,Courtney_TF21,1,also in lysosome dataset
 TB2_TCdying01,TB2_TCdying-01_cw,x,late,TB2,TF21,Courtney_TF21,1,
-TB2_TCdying02,TB2_TCdying-02_bits_cw,x,late,TB2,TF21,Courtney_TF21,1,
+TB2_TCdying02,TB2_TCdying-02_bits_cw,x,late,TB2,TF21,Courtney_TF21,1,also in lysosome dataset
 TB2_TCdying02,TB2_TCdying-02_cw,x,late,TB2,TF21,Courtney_TF21,1,
-TB3_TC01,TB3_TC01_bits_cw,x,late,TB3,TF21,Courtney_TF21,1,
+TB3_TC01,TB3_TC01_bits_cw,x,late,TB3,TF21,Courtney_TF21,1,also in lysosome dataset
 TB3_TC01,TB3_TC01_dying_cw,x,late,TB3,TF21,Courtney_TF21,1,
 TB3_TC02,TB3_TC02_T2dying_cw,II,early,TB3,TF21,Courtney_TF21,1,
 TB3_TC03,TB3_TC03_cw,III,early,TB3,TF21,Courtney_TF21,1,

@@ -118,10 +118,16 @@ for n=1:height(lysT)
     VL.SizeLabel(la) = lysT.SizeLabel(n);
 end
 
-type = lysT.Type;
-type(lysT.Health == "dying") = 'd';
-lysT.PlotSort = categorical(type,{'d','I','II','III','IV'},'ordinal',true);
+% type = lysT.Type;
+% type(lysT.Health == "dying") = 'd';
+% lysT.PlotSort = categorical(type,{'d','I','II','III','IV'},'ordinal',true);
+
 % lysT.PlotSort = categorical(lysT.Type,{'x','I','II','III','IV'},'ordinal',true);
+
+type = lysT.Type;
+type(lysT.Health=="early") = 'ed';
+type(lysT.Health=="late") = 'ld';
+lysT.PlotSort = categorical(type,{'IV','III','II','I','ld','ed'},'ordinal',true);
 
 % save
 project_path = fileparts(VL.Properties.UserData.file); % same folder as the VL file

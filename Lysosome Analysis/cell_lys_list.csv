@@ -33,3 +33,4 @@ TB2_T4C-01_cw,IV,TB2_T4C-01_lysosomes_cw,healthy,TB2,Courtney,TF21,Courtney_TF21
 TB2_TCdying-01_cw,x,TB2_TCdying-01_lysosomes_cw,late,TB2,Courtney,TF21,Courtney_TF21,
 TB2_TCdying-02_cw,x,TB2_TCdying-02_lysosomes,late,TB2,Courtney,TF21,Courtney_TF21,
 TB1_AP68_EM,III,TB1_AP68_lys_RSL,early,TB1,Rob,TF21,ROB_TF21_TB1,lysosomes not meshed yet
+TB3_TC01_dying_cw,x,TB3_TC01_lysosomes_cw,late,TB3,Courtney,TF21,Courtney_TF21,also segmented in dying script
