@@ -21,7 +21,7 @@ switch options.darkTheme % black or white background?
 end
 
 cellT = sortrows(cellT,["PlotSort","SurfaceArea"]);
-cN=histcounts(cellT.PlotSort,categories(cellT.PlotSort)); 
+cN=histcounts(cellT.PlotSort,categories(cellT.PlotSort));
 total = height(cellT);
 rows = numel(categories(cellT.PlotSort));
 cols = max(cN);
@@ -46,32 +46,36 @@ cm = turbo(max(VL.SizeLabel));
 fprintf('Rendering...\n')
 
 for n=1:total
-        
-    [vCell, vLys, szLys] = getVertsAndAlign(VL, cellT.Object(n),cellT.Polarity(n)); % align point clouds to axes
 
-    % plot surfaces
-    ax(n) = nexttile(tile_idx(n));
+    try
+        [vCell, vLys, szLys] = getVertsAndAlign(VL, cellT.Cell(n),cellT.Polarity(n)); % align point clouds to axes
 
-    % PC = pointCloud(vLys); % healthy lysosomes
-    pcshow(vLys, szLys,AxesVisibility="off");
+        % plot surfaces
+        ax(n) = nexttile(tile_idx(n));
 
-    hold on
+        % PC = pointCloud(vLys); % healthy lysosomes
+        pcshow(vLys, szLys,AxesVisibility="off");
 
-    if options.plotFast
-        plot_alphaShape(vCell, cellT.Object(n),fcolor, falpha);
-    else
-        plot_patch(vCell,cellT.Object(n),fcolor,falpha);
+        hold on
+
+        if options.plotFast
+            plot_alphaShape(vCell, cellT.Cell(n),fcolor, falpha);
+        else
+            plot_patch(vCell,cellT.Object(n),fcolor,falpha);
+        end
+
+        xlim([-10 10])
+        ylim([-10 10])
+        zlim([-50 50])
+
+        set(gca,CameraTarget=[0,0,0])
+
+        colormap(cm);
+
+        fprintf('%d. %s\n',n,cellT.Cell(n))
+    catch
+        fprintf('%d. %s not found\n' ,n,cellT.Cell(n))
     end
-  
-    xlim([-10 10])
-    ylim([-10 10])
-    zlim([-50 50])
-
-    set(gca,CameraTarget=[0,0,0])
-
-    colormap(cm);
-
-    fprintf('%d. %s\n',n,cellT.Object(n))
     % waitbar(n/total,wb,sprintf('%d. %s',n,cellT.Object(n)))
 end
 set(gcf,Color=figColor)
