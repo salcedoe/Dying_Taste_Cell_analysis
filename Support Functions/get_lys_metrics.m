@@ -50,7 +50,7 @@ for m=1:height(idT)
     PC = pointCloud(vl{:,["x" "y" "z"]}); % convert to point cloud
     SegLbl = vl.SegmentLabel;
 
-       for n=unique(SegLbl)'
+    for n=unique(SegLbl)'
 
         la = SegLbl == n;
         PCselect = select(PC,la);
@@ -64,7 +64,7 @@ for m=1:height(idT)
         end
 
         %3D analysis
-        shp3d = alphaShape(pts,1); % omitting the setting makes the calculation ribbon like
+        shp3d = alphaShape(pts,0.5); % omitting the setting makes the calculation ribbon like
 
         %2D Analysis - areas of individual traces
         grp2d = findgroups(pts(:,3));
@@ -72,7 +72,7 @@ for m=1:height(idT)
         for g=unique(grp2d)'
             la = grp2d == g;
             p = pts(la,1:2);
-            shp2d = alphaShape(p);
+            shp2d = alphaShape(p,0.5);
             area2d(g) = shp2d.area;
         end
 
@@ -90,10 +90,11 @@ for m=1:height(idT)
         lysT.Volume(idx) = shp3d.volume;
         lysT.SurfaceArea(idx) = shp3d.surfaceArea;
 
-        lysT.TraceSum(idx) = sum(area2d);
-        lysT.TraceMax(idx) = max(area2d);
-        lysT.TraceMean(idx) = mean(area2d);
-        lysT.TraceCount(idx) = height(area2d);
+        lysT.TraceSum(idx) = sum(area2d)*sliceThickness;
+        
+        % lysT.TraceMax(idx) = max(area2d);
+        % lysT.TraceMean(idx) = mean(area2d);
+        % lysT.TraceCount(idx) = height(area2d);
 
         lysT.verts{idx} = shp3d.Points;
 

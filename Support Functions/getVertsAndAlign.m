@@ -1,4 +1,4 @@
-function [vCell,vLys, szLys] = getVertsAndAlign(VL,CellID,polarity) 
+function [vCell,vLys, szLys,la] = getVertsAndAlign(VL,CellID,polarity) 
 %GETVERTSANDALIGN Returns cell and lysosome vertices 
 % Recenters centroids to 0,0,0 and reorients  so that the cell's long axis
 % is parallel to the z-axis
