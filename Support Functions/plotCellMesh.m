@@ -1,4 +1,4 @@
-function plotCellMesh(mesh,fcolor)
+function hp = plotCellMesh(mesh,fcolor)
 %PLOTCELLMESH plot surfaceMesh as a patch
 arguments 
     mesh surfaceMesh
@@ -9,9 +9,10 @@ simplify(mesh);
 % simplify(mesh,SimplificationMethod="quadric-decimation")
 % simplify(mesh,SimplificationMethod="vertex-clustering")
 
-patch(Faces=mesh.Faces,Vertices=mesh.Vertices, ...
+hp = patch(Faces=mesh.Faces,Vertices=mesh.Vertices, ...
     FaceColor=fcolor, ...
-    edgeAlpha = 0.1)
+    edgeAlpha = 0.1);
+
 axis equal off
 xlim([-15 15])
 ylim([-15 15])

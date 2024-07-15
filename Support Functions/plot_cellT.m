@@ -22,13 +22,13 @@ cm = turbo(max(VL.SizeLabel));
 
 for n=1:height(cellT)
 
-    object = cellT.Object(n); % find cell name
+    Cell = cellT.Cell(n); % find cell name
     polarity = cellT.Polarity(n); % get cell orientation
     nexttile
-    hp(n) = plot_cell_lys_overlay(VL,object,polarity,cell_render_method);
+    hp(n) = plot_cell_lys_overlay(VL,Cell,polarity,cell_render_method);
     % title(sprintf('%d. %s',n,object))
 
-    fprintf('%d. %s\n',n,object)
+    fprintf('%d. %s\n',n,Cell)
     colormap(cm);
 
 end

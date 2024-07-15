@@ -38,7 +38,7 @@ end
 
 % prepare to plot
 figure(Visible="on");
-tiledlayout(rows,cols,TileSpacing="none",Padding="tight");
+tiledlayout(rows,cols,TileSpacing="compact",Padding="loose");
 ax = gobjects(total,1);
 cm = turbo(max(VL.SizeLabel));
 
